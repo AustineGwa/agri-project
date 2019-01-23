@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gwaza.agriproject.HelpFrag">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/help_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:entries="@array/first_choices"
+                android:popupBackground="@color/green"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnsubmitselection"
+                android:layout_width="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:text="OK"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/second_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/help_goat_options"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:entries="@array/second_choices_goat"
+                android:popupBackground="@color/green"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnsubmitselection2_goat"
+                android:layout_width="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:text="OK"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/help_goat_options_3"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:entries="@array/third_choices_goat"
+                android:popupBackground="@color/green"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnsubmitselection3_goat"
+                android:layout_width="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/green"
+                android:text="OK"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368563233382",
+    "firebase_url": "https://agrihelper-cff51.firebaseio.com",
+    "project_id": "agrihelper-cff51",
+    "storage_bucket": "agrihelper-cff51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368563233382:android:05aea483b9c769f2",
+        "android_client_info": {
+          "package_name": "com.example.gwaza.agriproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368563233382-r6ihjthq3jfon02set8ghqsh68negvcf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gwaza.agriproject",
+            "certificate_hash": "191d857ea8dab6e7a60308977dd1ea07f5238856"
+          }
+        },
+        {
+          "client_id": "368563233382-643r5dui1mrkm3qeho02thsofcn4emdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP7s8c7SSAGYfJPZZQCSfUSbOpi-MzB34"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368563233382-643r5dui1mrkm3qeho02thsofcn4emdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

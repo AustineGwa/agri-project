@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gwaza.agriproject.HomeFrag">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardxpert"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/green"
+            app:layout_constraintBottom_toTopOf="@+id/cardchat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/helpcard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.836"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp">
+
+            <ImageButton
+                android:id="@+id/btnconexpert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtconexpert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="Contact Expert" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardchat"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:layout_marginBottom="68dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardfaqs"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp">
+
+            <ImageButton
+                android:id="@+id/btnchat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_comment_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="63dp"
+                android:gravity="center"
+                android:text="Chart" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/helpcard"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/green"
+            app:layout_constraintBottom_toTopOf="@+id/cardfaqs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.855"
+            android:layout_marginLeft="16dp">
+
+            <ImageButton
+                android:id="@+id/btnhelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_help_white_24dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:text="Get Help" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardfaqs"
+            android:layout_width="150dp"
+            android:layout_height="115dp"
+            android:layout_marginBottom="68dp"
+            android:layout_marginStart="16dp"
+            app:cardBackgroundColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp">
+
+            <ImageButton
+                android:id="@+id/btnfaqs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_question_answer_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtfaqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:text="FAQS" />
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+</FrameLayout>
