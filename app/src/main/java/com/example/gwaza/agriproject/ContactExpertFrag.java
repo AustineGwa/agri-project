@@ -120,6 +120,7 @@ public class ContactExpertFrag extends Fragment {
         }
     }
 
+
     private void startCall() {
         Intent callIntent  =   new Intent(Intent.ACTION_DIAL);
         startActivity(callIntent);

@@ -110,4 +110,5 @@ public class FragmentsHolderActivity extends AppCompatActivity
         Toast.makeText(this,"User loged out",Toast.LENGTH_SHORT).show();
         finish();
     }
+
 }

@@ -71,7 +71,7 @@ public class SignUp extends Activity{
                     progressDialog.show();
                     submit(userEmail, userPassword);
                 }else{
-                    Toast.makeText(getApplicationContext(),"password enterd do not match confirmation password",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"password entered do not match confirmation password",Toast.LENGTH_SHORT).show();
                     return;
                 }
             }
