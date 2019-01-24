@@ -41,9 +41,12 @@ public class FaqsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_faqs, container, false);
 
+        questions = new ArrayList<>();
+
         questions.add(new Faqs("How many times should a goat eat"));
         questions.add(new Faqs("What is the best goat meal "));
         questions.add(new Faqs("what is sweet potato vines"));
+
 
         OnQuestionClick onQuestionClick = new OnQuestionClick() {
             @Override
