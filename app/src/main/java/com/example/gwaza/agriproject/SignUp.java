@@ -66,6 +66,8 @@ public class SignUp extends Activity{
                 }
                 if(userPassword.equals(confirmedPassword)) {
 
+                    submit.setEnabled(false);
+
                     progressDialog.setMessage("Creating user Account");
                     progressDialog.setCanceledOnTouchOutside(false);
                     progressDialog.show();

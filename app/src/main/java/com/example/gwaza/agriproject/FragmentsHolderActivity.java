@@ -56,7 +56,8 @@ public class FragmentsHolderActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+           // super.onBackPressed();
+            Toast.makeText(this,"Please Exit using the logout button",Toast.LENGTH_SHORT).show();
         }
     }
 

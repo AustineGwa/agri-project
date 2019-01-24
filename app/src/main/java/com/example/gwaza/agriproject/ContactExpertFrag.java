@@ -114,7 +114,6 @@ public class ContactExpertFrag extends Fragment {
         emailIntent.putExtra(Intent.EXTRA_TEXT, messageBody.getText().toString());
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-            getActivity().finish();
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(getActivity(), "There is no email client installed.", Toast.LENGTH_SHORT).show();
         }
@@ -123,6 +122,7 @@ public class ContactExpertFrag extends Fragment {
 
     private void startCall() {
         Intent callIntent  =   new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse("tel:0724008153"));
         startActivity(callIntent);
 
     }
