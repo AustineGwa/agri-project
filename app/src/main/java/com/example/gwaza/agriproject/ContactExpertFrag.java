@@ -107,7 +107,7 @@ public class ContactExpertFrag extends Fragment {
 
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
+        emailIntent.setType("text/email");
 
         emailIntent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"agriproject@gmail.com"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "FARMER SEEKING HELP");
@@ -121,8 +121,9 @@ public class ContactExpertFrag extends Fragment {
 
 
     private void startCall() {
-        Intent callIntent  =   new Intent(Intent.ACTION_DIAL);
-        callIntent.setData(Uri.parse("tel:0724008153"));
+        Intent callIntent  =   new Intent(Intent.ACTION_CALL);
+        //callIntent.setData(Uri.parse("tel:0724008153"));
+        callIntent.setData(Uri.parse("tel:0718728894"));
         startActivity(callIntent);
 
     }

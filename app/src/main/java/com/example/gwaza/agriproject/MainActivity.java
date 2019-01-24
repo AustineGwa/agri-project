@@ -58,34 +58,36 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                String userEmail=username.getText().toString().trim();
-                String userPassword=password.getText().toString().trim();
+//                String userEmail=username.getText().toString().trim();
+//                String userPassword=password.getText().toString().trim();
+//
+//                if(TextUtils.isEmpty(userEmail)){
+//                    Toast.makeText(getApplicationContext(),"Please Enter Your username",Toast.LENGTH_SHORT).show();
+//                    return;
+//
+//                }else  if(TextUtils.isEmpty(userPassword)){
+//                    Toast.makeText(getApplicationContext(),"Please Enter Your password",Toast.LENGTH_SHORT).show();
+//                    return;
+//
+//                }else {
+//
+//                    progressDialog.setMessage("Verifying  user  credentials...");
+//                    progressDialog.setCanceledOnTouchOutside(false);
+//                    progressDialog.show();
+//                    login(userEmail, userPassword);
+//                }
+//
+//            }
+//        });
+//
+//        btnSignUp.setOnClickListener(new Button.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(),SignUp.class);
+//                startActivity(intent);
+//                finish();
 
-                if(TextUtils.isEmpty(userEmail)){
-                    Toast.makeText(getApplicationContext(),"Please Enter Your username",Toast.LENGTH_SHORT).show();
-                    return;
-
-                }else  if(TextUtils.isEmpty(userPassword)){
-                    Toast.makeText(getApplicationContext(),"Please Enter Your password",Toast.LENGTH_SHORT).show();
-                    return;
-
-                }else {
-
-                    progressDialog.setMessage("Verifying  user  credentials...");
-                    progressDialog.setCanceledOnTouchOutside(false);
-                    progressDialog.show();
-                    login(userEmail, userPassword);
-                }
-                
-            }
-        });
-
-        btnSignUp.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),SignUp.class);
-                startActivity(intent);
-                finish();
+                gotoHome();
             }
         });
 
@@ -128,12 +130,14 @@ public class MainActivity extends Activity {
                         // ...
                     }
 
-                    private void gotoHome() {
-                        Intent intent = new Intent(getApplicationContext(),FragmentsHolderActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
+
                 });
 
+    }
+
+    private void gotoHome() {
+        Intent intent = new Intent(getApplicationContext(),FragmentsHolderActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

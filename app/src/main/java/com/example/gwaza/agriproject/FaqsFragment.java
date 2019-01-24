@@ -47,6 +47,14 @@ public class FaqsFragment extends Fragment {
         questions.add(new Faqs("What is the best goat meal "));
         questions.add(new Faqs("what is sweet potato vines"));
 
+        questions.add(new Faqs("How many times should a goat eat"));
+        questions.add(new Faqs("What is the best goat meal "));
+        questions.add(new Faqs("what is sweet potato vines"));
+
+        questions.add(new Faqs("How many times should a goat eat"));
+        questions.add(new Faqs("What is the best goat meal "));
+        questions.add(new Faqs("what is sweet potato vines"));
+
 
         OnQuestionClick onQuestionClick = new OnQuestionClick() {
             @Override

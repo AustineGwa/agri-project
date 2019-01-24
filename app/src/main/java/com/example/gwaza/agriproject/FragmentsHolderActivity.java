@@ -58,7 +58,8 @@ public class FragmentsHolderActivity extends AppCompatActivity
         } else {
 
             drawer.openDrawer(GravityCompat.START);
-            Toast.makeText(this,"Please Exit using the logout button",Toast.LENGTH_SHORT).show();
+
+            //Toast.makeText(this,"Please Exit using the logout button",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -98,6 +99,9 @@ public class FragmentsHolderActivity extends AppCompatActivity
         } else if (id == R.id.nav_logout) {
 
             logout();
+        }else if(id== R.id.nav_settings){
+            Intent intent = new Intent(this,SettingsActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
