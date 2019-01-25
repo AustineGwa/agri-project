@@ -1,11 +1,7 @@
 package com.example.gwaza.agriproject;
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -111,7 +107,7 @@ public class FragmentsHolderActivity extends AppCompatActivity
 
     private void logout() {
 
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,Login.class);
         startActivity(intent);
         Toast.makeText(this,"User loged out",Toast.LENGTH_SHORT).show();
         finish();

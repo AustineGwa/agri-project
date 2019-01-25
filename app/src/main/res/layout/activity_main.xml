@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="0dp"
-    tools:context="com.example.gwaza.agriproject.MainActivity">
+    tools:context="com.example.gwaza.agriproject.Login">
 
     <EditText
         android:id="@+id/txtloginusername"

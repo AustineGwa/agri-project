@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends Activity {
+public class Login extends Activity {
     Button btnLogin, btnSignUp, btnReset;
     EditText username, password;
 
@@ -58,36 +57,34 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-//                String userEmail=username.getText().toString().trim();
-//                String userPassword=password.getText().toString().trim();
-//
-//                if(TextUtils.isEmpty(userEmail)){
-//                    Toast.makeText(getApplicationContext(),"Please Enter Your username",Toast.LENGTH_SHORT).show();
-//                    return;
-//
-//                }else  if(TextUtils.isEmpty(userPassword)){
-//                    Toast.makeText(getApplicationContext(),"Please Enter Your password",Toast.LENGTH_SHORT).show();
-//                    return;
-//
-//                }else {
-//
-//                    progressDialog.setMessage("Verifying  user  credentials...");
-//                    progressDialog.setCanceledOnTouchOutside(false);
-//                    progressDialog.show();
-//                    login(userEmail, userPassword);
-//                }
-//
-//            }
-//        });
-//
-//        btnSignUp.setOnClickListener(new Button.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(),SignUp.class);
-//                startActivity(intent);
-//                finish();
+                String userEmail=username.getText().toString().trim();
+                String userPassword=password.getText().toString().trim();
 
-                gotoHome();
+                if(TextUtils.isEmpty(userEmail)){
+                    Toast.makeText(getApplicationContext(),"Please Enter Your username",Toast.LENGTH_SHORT).show();
+                    return;
+
+                }else  if(TextUtils.isEmpty(userPassword)){
+                    Toast.makeText(getApplicationContext(),"Please Enter Your password",Toast.LENGTH_SHORT).show();
+                    return;
+
+                }else {
+
+                    progressDialog.setMessage("Verifying  user  credentials...");
+                    progressDialog.setCanceledOnTouchOutside(false);
+                    progressDialog.show();
+                    login(userEmail, userPassword);
+                }
+
+            }
+        });
+
+        btnSignUp.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),SignUp.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -121,7 +118,7 @@ public class MainActivity extends Activity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("TAG", "signInWithEmail:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                            Toast.makeText(Login.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
 
