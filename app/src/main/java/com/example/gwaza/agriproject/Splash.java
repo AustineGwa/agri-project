@@ -1,12 +1,13 @@
 package com.example.gwaza.agriproject;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends Activity {
     private  boolean isSessionActive;
 
     @Override
