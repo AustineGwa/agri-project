@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class FragmentsHolderActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -107,6 +109,7 @@ public class FragmentsHolderActivity extends AppCompatActivity
 
     private void logout() {
 
+        FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this,Login.class);
         startActivity(intent);
         Toast.makeText(this,"User loged out",Toast.LENGTH_SHORT).show();

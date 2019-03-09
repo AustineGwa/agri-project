@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Splash extends Activity {
+
+    private FirebaseAuth mAuth;
     private  boolean isSessionActive;
 
     @Override
@@ -19,7 +24,8 @@ public class Splash extends Activity {
 
         setContentView(R.layout.activity_splash);
 
-        isSessionActive = getSesionStatus().equals("active");
+        mAuth = FirebaseAuth.getInstance();
+        isSessionActive = getSesionStatus();
 
         Thread thread  = new Thread(){
 
@@ -47,8 +53,11 @@ public class Splash extends Activity {
         thread.start();
     }
 
-    public String getSesionStatus() {
+    public boolean getSesionStatus() {
 
-        return "active";
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        isSessionActive = currentUser != null;
+        return isSessionActive;
     }
 }

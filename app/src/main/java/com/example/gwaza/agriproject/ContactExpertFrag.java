@@ -80,7 +80,7 @@ public class ContactExpertFrag extends Fragment {
 
                 }
 
-                mRef.setValue(new Question(qSubject,qMessageBody));
+                mRef.child(mRef.getKey()).setValue(new Question(qSubject,qMessageBody));
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.flmain,new SuccessFrag());
                 ft.commit();
