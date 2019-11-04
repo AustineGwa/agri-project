@@ -61,6 +61,6 @@ public class ViewHelpResultFrag extends Fragment {
     }
 
     private void likePost() {
-        Toast.makeText(getActivity(),"Thanks for liking thispost pleaseshare  the app",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(),"Thanks for liking this  post pleaseshare  the app",Toast.LENGTH_SHORT).show();
     }
 }

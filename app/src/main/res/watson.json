@@ -1,0 +1,8 @@
+{
+  "apikey": "wsOqyCDleJdlDEmXcyiz5hDx2xWqIEuvigny2MEH1HVA",
+  "iam_apikey_description": "Auto-generated for key 2978832f-1f95-4d88-8bb6-54a6d74fff8c",
+  "iam_apikey_name": "for-android-app",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/b14dbc0c48e44410a0fc42fec96470ce::serviceid:ServiceId-81f6ec33-3c9c-4303-a7a9-e1eec9ec9014",
+  "url": "https://gateway-lon.watsonplatform.net/assistant/api"
+}

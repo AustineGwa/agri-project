@@ -1,0 +1,8 @@
+{
+  "apikey": "Bff_n0hEwfYGu_QYLyxS2_jjkgaeZ7g9IQCa2gt81csb",
+  "iam_apikey_description": "Auto-generated for key bf53126b-5d09-40c8-91ff-2e744bb736eb",
+  "iam_apikey_name": "for-android-app",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/b14dbc0c48e44410a0fc42fec96470ce::serviceid:ServiceId-be4d62af-abba-445a-beb2-a30783e16e86",
+  "url": "https://gateway-lon.watsonplatform.net/text-to-speech/api"
+}
