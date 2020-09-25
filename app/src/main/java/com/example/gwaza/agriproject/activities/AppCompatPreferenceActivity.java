@@ -1,4 +1,4 @@
-package com.example.gwaza.agriproject;
+package com.example.gwaza.agriproject.activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

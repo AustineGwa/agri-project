@@ -14,24 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Login" />
+        <activity android:name=".activities.Login" />
 
 
         <activity
-            android:name=".FragmentsHolderActivity"
+            android:name=".activities.FragmentsHolderActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".Reset" />
+        <activity android:name=".activities.SignUp" />
+        <activity android:name=".activities.Reset" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".FragmentsHolderActivity">
+            android:parentActivityName=".activities.FragmentsHolderActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.gwaza.agriproject.FragmentsHolderActivity" />
+                android:value="com.example.gwaza.agriproject.activities.FragmentsHolderActivity" />
         </activity>
-        <activity android:name=".Splash">
+        <activity android:name=".activities.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

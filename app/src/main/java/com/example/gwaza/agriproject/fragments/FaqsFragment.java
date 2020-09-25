@@ -1,7 +1,6 @@
-package com.example.gwaza.agriproject;
+package com.example.gwaza.agriproject.fragments;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -10,8 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import com.example.gwaza.agriproject.R;
 import com.example.gwaza.agriproject.adapters.FaqsAdapter;
 import com.example.gwaza.agriproject.interfaces.OnQuestionClick;
 import com.example.gwaza.agriproject.models.Faqs;

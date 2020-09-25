@@ -1,4 +1,4 @@
-package com.example.gwaza.agriproject;
+package com.example.gwaza.agriproject.fragments;
 
 
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
+
+import com.example.gwaza.agriproject.R;
 
 
 /**

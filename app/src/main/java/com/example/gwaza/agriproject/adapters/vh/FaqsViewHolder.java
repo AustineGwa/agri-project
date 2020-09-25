@@ -1,4 +1,4 @@
-package com.example.gwaza.agriproject.viewHolders;
+package com.example.gwaza.agriproject.adapters.vh;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

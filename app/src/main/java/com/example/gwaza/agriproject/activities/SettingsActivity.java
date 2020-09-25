@@ -1,4 +1,4 @@
-package com.example.gwaza.agriproject;
+package com.example.gwaza.agriproject.activities;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -19,6 +19,8 @@ import android.preference.RingtonePreference;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
+
+import com.example.gwaza.agriproject.R;
 
 import java.util.List;
 

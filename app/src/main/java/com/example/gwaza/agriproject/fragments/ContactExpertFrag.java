@@ -1,4 +1,4 @@
-package com.example.gwaza.agriproject;
+package com.example.gwaza.agriproject.fragments;
 
 
 import android.app.ProgressDialog;
@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.gwaza.agriproject.R;
 import com.example.gwaza.agriproject.models.Question;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
